@@ -1,0 +1,10 @@
+[user]
+	name = Steve Apel
+	email = steveapel@gmail.com
+[color]
+	ui = true
+
+[branch]
+	autosetuprebase = always
+[core]
+	excludesfile = /Users/steve/.gitignore_global
