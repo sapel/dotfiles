@@ -18,7 +18,14 @@ fi
 export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 #PS1='\[\e[1;32m\][\h:\W$(__git_ps1 " (%s)")]\$\[\e[0m\] '
 
-HISTFILESIZE=2500
+#improve bash history ;)
+shopt -s histappend
+PROMPT_COMMAND=$PROMPT_COMMAND';history -a'
+# Store 10000 commands in bash history
+export HISTFILESIZE=100000
+export HISTSIZE=100000
+# Don't put duplicate lines in the history
+export HISTCONTROL=ignoredups
 
 # Python
 export PYTHONPATH=$HOME/lib/python
@@ -43,3 +50,4 @@ jiralink() {
     git log ${1}..${2} | grep -oh "\w*JDM-\w*" | uniq | tr '\n' ',' | sed 's/JDM/"JDM/g' | sed 's/,/"+OR+key%3D/g' | sed s/+OR\+key\%3D$// | xargs echo 'https://newecx.atlassian.net/secure/IssueNavigator!executeAdvanced.jspa?reset=true&jqlQuery=key%3D'
   fi
 }
+
