@@ -18,9 +18,8 @@ fi
 export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 #PS1='\[\e[1;32m\][\h:\W$(__git_ps1 " (%s)")]\$\[\e[0m\] '
 
-#improve bash history ;)
 shopt -s histappend
-PROMPT_COMMAND=$PROMPT_COMMAND';history -a'
+export PROMPT_COMMAND='history -s'
 # Store 10000 commands in bash history
 export HISTFILESIZE=100000
 export HISTSIZE=100000
