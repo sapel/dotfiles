@@ -14,9 +14,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 # Prompt
-#export PS1='\e[0;35m\u@\h\e[m \e[0;34m\w$(__git_ps1):\e[m\r\n'
 export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-#PS1='\[\e[1;32m\][\h:\W$(__git_ps1 " (%s)")]\$\[\e[0m\] '
 
 shopt -s histappend
 export PROMPT_COMMAND='history -s'
