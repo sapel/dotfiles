@@ -31,14 +31,4 @@ export HISTCONTROL=ignoredups
 alias stage='ssh deploy@162.243.50.74'
 alias magmed='ssh root@192.241.213.40'
 
-#Ritani hosts
-#alias stage='ssh deploy@ec2-50-112-103-207.us-west-2.compute.amazonaws.com'
-#alias stage-sidekiq='ssh deploy@ec2-54-245-128-208.us-west-2.compute.amazonaws.com'
-#alias stage-db='ssh deploy@ec2-54-245-7-80.us-west-2.compute.amazonaws.com'
-#alias stage-reports='ssh deploy@ec2-50-112-65-250.us-west-2.compute.amazonaws.com'
-#alias stage-search='ssh deploy@ec2-50-112-31-9.us-west-2.compute.amazonaws.com'
-#alias stage2='ssh deploy@ec2-54-245-110-178.us-west-2.compute.amazonaws.com'
-#alias prod1='ssh deploy@ec2-50-112-107-180.us-west-2.compute.amazonaws.com'
-#alias prod2='ssh deploy@ec2-50-112-55-193.us-west-2.compute.amazonaws.com'
-#alias prod-sidekiq='ssh deploy@ec2-50-112-21-74.us-west-2.compute.amazonaws.com'
 
