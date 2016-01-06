@@ -29,6 +29,3 @@ export HISTCONTROL=ignoredups
 
 #Apelcraft hosts
 alias stage='ssh deploy@162.243.50.74'
-alias magmed='ssh root@192.241.213.40'
-
-
