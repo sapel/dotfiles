@@ -18,6 +18,7 @@ export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 #Python
 export PYTHONPATH=$HOME/lib/python
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/Library/Python/2.7/bin
 
 shopt -s histappend
 export PROMPT_COMMAND='history -s'
